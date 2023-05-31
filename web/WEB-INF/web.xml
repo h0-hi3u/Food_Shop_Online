@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <welcome-file-list>
+        <welcome-file>home/index</welcome-file>
+    </welcome-file-list>
+    
+    <filter>
+        <filter-name>FilterCheckUser</filter-name>
+        <filter-class>filter.FilterCheckUser</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterCheckUser</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <filter>
+        <filter-name>FilterCheckAdmin</filter-name>
+        <filter-class>filter.FilterCheckAdmin</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>FilterCheckAdmin</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    
+    <session-config>
+        <session-timeout>
+            1
+        </session-timeout>
+    </session-config>
+</web-app>
