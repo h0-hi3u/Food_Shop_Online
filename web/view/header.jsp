@@ -5,13 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div id="admin">
-    <button class="btn" style="background-color: silver ">
-        <a style="color: red" href="/SE161557/admin/danhmuc/IndexDM"> Danh Muc </a>
-    </button>
-    <button class="btn" style="background-color: silver ">
-        <a style="color: red" href="/SE161557/admin/nhacungcap/IndexNCC"> Nha Cung Cap </a>
-    </button> 
-    <button class="btn" style="background-color: silver ">
-        <a style="color: red" href="/SE161557/admin/sanpham/IndexSP"> San Pham </a>
-</div>
+<div class="btn-group btn-group-lg">
+                <button type="button" class="btn btn-outline-success btn-lg">
+                    <a class="link-success" href> Danh Muc </a>
+                </button>
+                <button type="button" class="btn btn-outline-success btn-lg">
+                    <a class="link-success" href> Nha Cung Cap
+                    </a>
+                </button>
+                <button type="button" class="btn btn-outline-success btn-lg">
+                    <a class="link-success" href> San Pham </a>
+                </div>

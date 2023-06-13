@@ -60,6 +60,7 @@ public class Login extends HttpServlet {
             HttpSession session = request.getSession();
             session.setAttribute("username", _taikhoan.getTenTK());
             session.setAttribute("role", _taikhoan.getNhomTaiKhoan().getNhomTaiKhoan());
+            String check = _taikhoan.getNhomTaiKhoan().getNhomTaiKhoan();
             session.setMaxInactiveInterval(60 * 60);
             response.sendRedirect(request.getContextPath() + "/home/index");
 //            RequestDispatcher rd = getServletContext().getRequestDispatcher("/home/index");
